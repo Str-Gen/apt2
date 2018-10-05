@@ -60,3 +60,12 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# Dot files (graphviz)
+*.dot
+
+# Pdf files
+*.pdf
+
+# Vs-Code conf
+.vscode/
