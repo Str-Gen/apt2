@@ -11,7 +11,7 @@ class actionModule(object):
     def __init__(self, config, display, lock):
         self.display = display
         self.config = config
-        self.safelevel = 1
+        self.safeLevel = 1
         self.targets = []
         self.title = ""
         self.shortName = ""
@@ -75,7 +75,7 @@ class actionModule(object):
         # create new thread/process for the packet capture
         async_result = pool.apply_async(p.capture, (filter, timeout, packetcount, srcip, dstip,))
 
-        # slepp for a second to allow everything to get set up
+        # sleep for a second to allow everything to get set up
         time.sleep(1)
 
         return async_result
